@@ -37,42 +37,6 @@
             <button id = "missionAbort">Abort Mission</button>
     </div>
 
-    <script>
-    
-    //2
-    document.getElementById("takeoff").onclick = function(){
-        let confirmReady = window.confirm("Confirm that the shuttle is ready for takeoff.");
-
-        if (confirmReady) {
-            let changeFlightStatus = document.getElementById("flightStatus").innerHTML = "Shuttle in flight";
-            let changeBackgroundColor = document.getElementById("shuttleBackground").style.backgroundColor = "blue";
-            let changeHeight = document.getElementById("spaceShuttleHeight").innerHTML = "10000";
-        }
-    }
-
-    //3
-    document.getElementById("landing").onclick = function(){
-        let confirmLanding = window.alert("The shuttle is landing. Landing gear engaged.");
-        let changeFlightStatus = document.getElementById("flightStatus").innerHTML = "The shuttle has landed.";
-        let changeBackgroundColor = document.getElementById("shuttleBackground").style.backgroundColor = "green";
-        let changeHeight = document.getElementById("spaceShuttleHeight").innerHTML = "0";
-    }
-
-    //4
-    document.getElementById("missionAbort").onclick = function(){
-        let confirmAbort = window.confirm("Confirm that you want to abort the mission.");
-
-        if (confirmAbort) {
-            let changeFlightStatus = document.getElementById("flightStatus").innerHTML = "Mission aborted.";
-            let changeBackgroundColor = document.getElementById("shuttleBackground").style.backgroundColor = "green";
-            let changeHeight = document.getElementById("spaceShuttleHeight").innerHTML = "0";
-        }
-    }
-
-    //5
-    
-
-
-    </script>
+   
     </body>
 </html>
